@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/e-commerce-product-page-frontend-mentor/static/css/main.7580c7af.css",
+    "main.js": "/e-commerce-product-page-frontend-mentor/static/js/main.95a40337.js",
+    "index.html": "/e-commerce-product-page-frontend-mentor/index.html",
+    "main.7580c7af.css.map": "/e-commerce-product-page-frontend-mentor/static/css/main.7580c7af.css.map",
+    "main.95a40337.js.map": "/e-commerce-product-page-frontend-mentor/static/js/main.95a40337.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7580c7af.css",
+    "static/js/main.95a40337.js"
+  ]
+}
