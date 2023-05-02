@@ -6,8 +6,8 @@
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [github pages]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/ecommerce-product-page-with-react-js-Qs5g18Ptk8)
+- Live Site URL: [github pages](https://zulfikarm321.github.io/e-commerce-product-page-frontend-mentor/)
 
 ### The challenge
 
