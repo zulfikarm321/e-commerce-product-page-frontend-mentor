@@ -1,0 +1,209 @@
+nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+
+  .nav_container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.486);
+    height: 100%;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .nav_left {
+      display: flex;
+      align-items: center;
+      gap: 2vw;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.651);
+        z-index: 3;
+        display: flex;
+      }
+
+      .menu_dropdown {
+        position: absolute;
+        top: 0;
+        left: -100vw;
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        padding: 100px 40px;
+        background-color: white;
+        z-index: 4;
+        transition: all ease-in-out 0.3;
+
+        .menu_dropdown_link a {
+          color: black;
+          font-weight: bold;
+        }
+      }
+
+      .menu_icon {
+        display: none;
+        place-items: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 98;
+
+        @media (max-width: 768px) {
+          display: grid;
+        }
+      }
+
+      .nav_logo {
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+      }
+
+      .nav_links {
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+
+        .nav_link a {
+          color: hsl(219, 9%, 45%);
+          position: relative;
+          cursor: pointer;
+
+          &::after {
+            content: '';
+            position: absolute;
+            background-color: hsl(26, 100%, 55%);
+            height: 3px;
+            left: 0;
+            bottom: -4vh;
+            width: 0;
+            transition: all ease-in-out 0.3s;
+          }
+
+          &:hover::after {
+            width: 100%;
+            transition: all ease-in-out 0.3s;
+          }
+
+          &:hover {
+            color: hsl(219, 9%, 29%);
+          }
+        }
+      }
+    }
+
+    .nav_right {
+      display: flex;
+      align-items: center;
+      gap: 2vw;
+      position: relative;
+
+      .cart_icon {
+        display: grid;
+        place-items: center;
+        position: relative;
+        cursor: pointer;
+
+        span {
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          background-color: hsl(26, 100%, 55%);
+          color: white;
+          font-size: 12px;
+          border-radius: 50%;
+          padding: 1px 5px;
+        }
+      }
+
+      .avatar_icon {
+        display: grid;
+        place-items: center;
+        width: 40px;
+        border-radius: 50px;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover {
+          outline: 2px solid hsl(26, 100%, 55%);
+        }
+      }
+
+      .cart_detail {
+        position: absolute;
+        background-color: white;
+        display: none;
+        flex-direction: column;
+        width: max-content;
+        z-index: 3;
+        top: 5vh;
+        right: 0;
+        box-shadow: 0 0 20px 2px rgba(128, 128, 128, 0.432);
+        gap: 20px;
+        padding: 20px;
+        border-radius: 5px;
+
+        @media (max-width: 500px) {
+          width: 90vw;
+        }
+
+        .cart_detail_items {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+
+          .cart_detail_image {
+            width: 70px;
+          }
+
+          .cart_detail_info {
+            p {
+              color: hsl(219, 9%, 45%);
+            }
+
+            span {
+              color: black;
+              font-weight: bold;
+              margin-left: 10px;
+            }
+          }
+
+          .btn_delete {
+            cursor: pointer;
+          }
+        }
+
+        .btn_checkout {
+          background-color: hsl(26, 100%, 55%);
+          color: white;
+          border: none;
+          padding: 15px;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

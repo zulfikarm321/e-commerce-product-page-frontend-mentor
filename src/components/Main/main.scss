@@ -1,0 +1,133 @@
+main {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    height: max-content;
+  }
+
+  .main_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+    gap: 100px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content max-content;
+      padding: 0 0px;
+      gap: 20px;
+    }
+
+    .main_left {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 768px) {
+        height: 40vh;
+        overflow: hidden;
+      }
+    }
+
+    .main_right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+
+      @media (max-width: 768px) {
+        padding: 0 20px;
+      }
+
+      .main_subtitle {
+        color: hsl(26, 100%, 55%);
+      }
+
+      .main_title {
+        color: black;
+        font-size: clamp(1.25rem, -0.3125rem + 5vw, 2.5rem);
+      }
+
+      .main_text {
+        color: hsl(219, 9%, 45%);
+        line-height: 25px;
+      }
+
+      .main_price_wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .price_tag {
+          display: flex;
+          gap: 20px;
+
+          .discount {
+            padding: 5px;
+            color: hsl(26, 100%, 55%);
+            background-color: hsl(25, 100%, 94%);
+            font-weight: bold;
+            border-radius: 3px;
+          }
+
+          .price {
+            color: hsl(219, 9%, 45%);
+            font-size: 18px;
+          }
+        }
+      }
+
+      .main_buttons {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        gap: 40px;
+        align-items: center;
+
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr max-content;
+          gap: 20px;
+        }
+
+        .main_button_left {
+          display: flex;
+          gap: 40px;
+          justify-content: space-between;
+
+          .minus_icon,
+          .plus_icon {
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+
+            &:hover {
+              opacity: 0.9;
+            }
+          }
+        }
+
+        .main_button_right {
+          .btn_cart {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: white;
+            background-color: hsl(26, 100%, 55%);
+            justify-content: center;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            gap: 10px;
+
+            &:hover {
+              opacity: 0.9;
+            }
+          }
+        }
+      }
+    }
+  }
+}
