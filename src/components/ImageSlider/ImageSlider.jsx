@@ -34,7 +34,7 @@ const ImageSlider = ({ open, isModalOpen }) => {
           setCurrentIndex((prev) => prev - 1);
         }}
       >
-        <img src="/images/icon-previous.svg" alt="prev icon" />
+        <img src="images/icon-previous.svg" alt="prev icon" />
       </div>
       <div
         className="btn_next"
@@ -43,7 +43,7 @@ const ImageSlider = ({ open, isModalOpen }) => {
           setCurrentIndex((prev) => prev + 1);
         }}
       >
-        <img src="/images/icon-next.svg" alt="next icon" />
+        <img src="images/icon-next.svg" alt="next icon" />
       </div>
       <div className="image_slider_preview">
         <img

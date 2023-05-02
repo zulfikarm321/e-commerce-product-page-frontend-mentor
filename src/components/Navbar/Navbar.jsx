@@ -58,7 +58,7 @@ const Navbar = ({ cartvalue, setCartvalue }) => {
             )}
           </div>
           <div className="nav_logo">
-            <img src="/images/logo.svg" alt="logo" />
+            <img src="images/logo.svg" alt="logo" />
           </div>
           <ul className="nav_links">
             <li className="nav_link">
@@ -80,7 +80,7 @@ const Navbar = ({ cartvalue, setCartvalue }) => {
         </div>
         <div className="nav_right">
           <div className="cart_icon" onClick={handleCart}>
-            <img src="/images/icon-cart.svg" alt="cart icon" />
+            <img src="images/icon-cart.svg" alt="cart icon" />
             {cartvalue > 0 ? <span>{cartvalue}</span> : ''}
           </div>
           <div
@@ -99,7 +99,7 @@ const Navbar = ({ cartvalue, setCartvalue }) => {
                 <div className="cart_detail_items">
                   <div className="cart_detail_image">
                     <img
-                      src="/images/image-product-1-thumbnail.jpg"
+                      src="images/image-product-1-thumbnail.jpg"
                       alt="product image"
                     />
                   </div>
@@ -115,7 +115,7 @@ const Navbar = ({ cartvalue, setCartvalue }) => {
                     </div>
                   </div>
                   <div className="btn_delete" onClick={decrementCartValue}>
-                    <img src="/images/icon-delete.svg" alt="delete icon" />
+                    <img src="images/icon-delete.svg" alt="delete icon" />
                   </div>
                 </div>
                 <button className="btn_checkout">Checkout</button>
@@ -123,7 +123,7 @@ const Navbar = ({ cartvalue, setCartvalue }) => {
             )}
           </div>
           <div className="avatar_icon">
-            <img src="/images/image-avatar.png" alt="avatar icon" />
+            <img src="images/image-avatar.png" alt="avatar icon" />
           </div>
         </div>
       </div>

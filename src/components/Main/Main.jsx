@@ -57,14 +57,14 @@ const Main = ({ setCart }) => {
                   setQuantity((prev) => prev - 1);
                 }}
               >
-                <img src="/images/icon-minus.svg" alt="minus icon" />
+                <img src="images/icon-minus.svg" alt="minus icon" />
               </div>
               <span>{quantity}</span>
               <div
                 className="plus_icon"
                 onClick={() => setQuantity((prev) => prev + 1)}
               >
-                <img src="/images/icon-plus.svg" alt="plus icon" />
+                <img src="images/icon-plus.svg" alt="plus icon" />
               </div>
             </div>
             <div className="main_button_right">

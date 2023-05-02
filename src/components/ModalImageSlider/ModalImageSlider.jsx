@@ -12,7 +12,7 @@ const ModalImageSlider = ({ isModalOpen, closeModal, openModal }) => {
       <div className="modal_image_slider_container">
         <div className="close_icon_modal">
           <img
-            src="/images/icon-close.svg"
+            src="images/icon-close.svg"
             alt="close icon"
             onClick={closeModal}
           />
